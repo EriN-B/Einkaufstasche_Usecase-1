@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+ion-content{
+    --background: #242424;
+}
+.content{
+    margin-top: 20%;
+}
+.button_login,.button_register{
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+}

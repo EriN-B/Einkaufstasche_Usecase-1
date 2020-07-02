@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <img class="profile_picture" src="{{url}}">
+  <h1>Username</h1><br>
+  <ion-button class="profile_picture_button" (click)="presentAlertPrompt()">Set profile Picture</ion-button>
+  <ion-button href="/welcome" class="logout_button">Logout</ion-button>
+  
+</ion-content>

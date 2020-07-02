@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="main">
+    <div class="header">
+      <img src="https://i.ibb.co/tQjScPf/9b5b7c34-cf4a-4f58-a523-78a744b1cb47-200x200.png">
+    </div>
+    <div class="content">
+      <ion-item>
+        <ion-label position="stacked">Email <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="stacked" >Password <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="stacked" >Confirm Password <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="password" [(ngModel)]="cpassword"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" >Set Profilepicture <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="link" [(ngModel)]="link"></ion-input>
+      </ion-item>
+      <ion-button (click)="Register()">Log  in</ion-button><br>
+    </div>
+  </div>
+  
+</ion-content>

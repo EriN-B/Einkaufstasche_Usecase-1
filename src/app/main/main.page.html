@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">Einkaufsliste</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class=new_item>
+    <ion-button class="Button" (click)="presentAlertPrompt()">
+      New Item
+    </ion-button>
+  </div>
+    <div class="content"> 
+      <div>
+        <ion-list>
+          <ion-item-sliding *ngFor="let Produkt of Produkt">
+            <ion-item>
+              <ion-label>{{Produkt}}</ion-label>
+            </ion-item>
+            <ion-item-options side="end" *ngFor="let Produkt_Menge of Produkt_Menge" >
+              <ion-item-option color="danger" (click)="delete(item)">Delete</ion-item-option>
+              <ion-item-option color="secondary" (click)="presentAlertMultipleButtons(Produkt,Produkt_Menge)">Details</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+      </div>
+    </div>
+</ion-content>
